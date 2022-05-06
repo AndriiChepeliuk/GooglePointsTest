@@ -9,6 +9,6 @@ namespace Core.Interfaces.CustomService
 {
     public interface IPointService
     {
-        Task<PointCreationDTO> AddPoint(PointCreationDTO pointCreationDTO);
+        Task AddPoint(PointCreationDTO pointCreationDTO);
     }
 }

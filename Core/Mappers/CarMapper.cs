@@ -14,6 +14,7 @@ namespace Core.Mappers
         public CarMapper()
         {
             CreateMap<PointCreationDTO, Point>();
+            CreateMap<Point, PointCreationDTO>();
         }
     }
 }
