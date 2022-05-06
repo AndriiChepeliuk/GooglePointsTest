@@ -4,9 +4,9 @@ using Core.Entities.PointEntity;
 
 namespace Core.Mappers
 {
-    public class CarMapper : Profile
+    public class PointMapper : Profile
     {
-        public CarMapper()
+        public PointMapper()
         {
             CreateMap<PointCreationDTO, Point>();
             CreateMap<Point, PointCreationDTO>();
