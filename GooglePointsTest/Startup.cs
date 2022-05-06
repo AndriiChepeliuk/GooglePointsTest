@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Infrastructure;
+using Core;
 
 namespace GooglePointsTest
 {
@@ -22,7 +23,11 @@ namespace GooglePointsTest
         {
 
             services.AddControllers();
+            services.AddRepositories();
             services.AddDbContext(Configuration.GetConnectionString("DefaultConnection"));
+            services.AddCustomServices();
+            services.AddAutoMapper();
+            services.AddResponseCaching();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GooglePointsTest", Version = "v1" });

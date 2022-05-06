@@ -3,10 +3,6 @@ using Core.DTO.PointDTO;
 using Core.Entities.PointEntity;
 using Core.Interfaces;
 using Core.Interfaces.CustomService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Core.Services
